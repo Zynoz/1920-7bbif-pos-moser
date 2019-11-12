@@ -31,6 +31,7 @@
         <project.build.targetEncoding>${encoding}</project.build.targetEncoding>
 
         <junit-jupiter.version>5.5.2</junit-jupiter.version>
+        <assertj-core.version>3.13.2</assertj-core.version>
     </properties>
 
     <dependencies>
@@ -38,6 +39,12 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj-core.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
