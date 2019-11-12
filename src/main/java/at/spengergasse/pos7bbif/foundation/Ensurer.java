@@ -18,7 +18,7 @@ public class Ensurer {
     }
 
     public static String ensureNotBlank(String stringValue, String name) {
-        if (ensureNotNull(stringValue).isEmpty()) throw new IllegalArgumentException(String.format("%s must not be blan but was %s", name, stringValue));
+        if (ensureNotNull(stringValue).trim().isEmpty()) throw new IllegalArgumentException(String.format("%s must not be blank but was %s", name, stringValue));
         return stringValue;
     }
 
