@@ -4,9 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import javax.print.attribute.standard.MediaSize;
-
 import static at.spengergasse.pos7bbif.foundation.Ensurer.*;
+import static at.spengergasse.pos7bbif.foundation.Ensurer.ensureNotNull;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
